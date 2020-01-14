@@ -13,4 +13,4 @@ jobs:
     steps:
       - name: Build
         run: |
-          echo "Tag is a match"
+          echo "Tag is a match master"
