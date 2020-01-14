@@ -1,4 +1,4 @@
-name: on create ci man
+name: on create on release
 
 on:
   create:
