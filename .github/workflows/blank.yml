@@ -3,7 +3,7 @@ name: on create ci man
 on:
   create:
     branches:
-      - master
+      - release
 
 jobs:
   build:
