@@ -11,8 +11,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    if: github.events.ref == 'refs/tags/c10'
     steps:
       - name: Build
+        if: contains(github.ref, "release")
         run: |
           echo "Tag is a match"
