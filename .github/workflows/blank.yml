@@ -4,6 +4,8 @@ on:
   create:
     branches:
       - anyBranch
+    tags:
+      - c1*
 
 jobs:
   build:
