@@ -2,13 +2,11 @@ name: CI on any branch only created
 
 on:
   create:
-    tags:
-      - v1*
-  push:
     branches:
       - master
     tags:
-      - c1*
+      - v1*
+
 
 jobs:
   build:
