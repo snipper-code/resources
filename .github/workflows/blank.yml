@@ -3,7 +3,7 @@ name: CI on master created
 on:
   create:
     branches:
-      - master
+      - anyBranch
 
 jobs:
   build:
