@@ -3,6 +3,8 @@ name: CI on any branch master created
 on:
   release:
     types: [published]
+    tags:
+      - c1*
     branches:
       - master  
 
