@@ -11,7 +11,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    if: github.events.ref == 'ref/tags/c9'
+    if: github.events.ref == 'refs/tags/c10'
     steps:
       - name: Build
         run: |
