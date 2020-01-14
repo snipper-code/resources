@@ -2,7 +2,8 @@ name: CI for release only
 
 on:
   release:
-    - branches: [release]
+    types: [published]
+    branches: [release]
       
 
 jobs:
