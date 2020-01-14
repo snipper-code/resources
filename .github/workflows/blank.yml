@@ -1,12 +1,9 @@
-name: CI on any branch only created
+name: CI on any branch master created
 
 on:
-  create:
-    branches:
-      - master
-    tags:
-      - v1*
-
+  push: 
+    branches: 
+      - refs/tags/*
 
 jobs:
   build:
