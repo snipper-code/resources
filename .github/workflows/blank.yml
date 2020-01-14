@@ -3,8 +3,6 @@ name: CI on any branch master created
 on:
   release:
     types: [published]
-    tags:
-      - c1*
     branches:
       - master  
 
@@ -13,6 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Build
-        if: contains(github.ref, 'refs/tags')
+        if: startsWith(github.ref, 'refs/tags/v')
         run: |
           echo "Tag is a match"
