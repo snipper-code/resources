@@ -2,7 +2,7 @@ name: CI on any branch master created
 
 on:
   release:
-    types: [published]
+    types: [created]
     branches:
       - master  
 
