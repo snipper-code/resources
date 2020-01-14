@@ -1,4 +1,4 @@
-name: CI on master created
+name: CI on any branch only created
 
 on:
   create:
