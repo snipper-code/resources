@@ -1,10 +1,10 @@
 name: CI on any branch master created
 
 on:
-  push: 
-    branches: 
-      - refs/tags/*
-      - master
+  release:
+    types: [published]
+    branches:
+      - master  
 
 jobs:
   build:
