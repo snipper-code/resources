@@ -13,6 +13,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Build
-        if: contains(github.ref, "release")
+        if: contains('Hello world', 'llo')
         run: |
           echo "Tag is a match"
